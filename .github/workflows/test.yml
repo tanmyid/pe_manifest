@@ -36,7 +36,7 @@ jobs:
 
     - name: Sync repository
       run: |
-        repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
+        ~/.bin/repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 
     - name: Set up environment
       run: . build/envsetup.sh
