@@ -32,7 +32,7 @@ jobs:
 
     - name: Initialize local repository
       run: |
-        repo init -u https://github.com/PixelExperience/manifest -b fourteen
+        ~/.bin/repo init -u https://github.com/PixelExperience/manifest -b fourteen
 
     - name: Sync repository
       run: |
